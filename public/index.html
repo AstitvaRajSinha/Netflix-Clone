@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Netflix-Clone</title>
+<script src=https://cdn.tailwindcss.com></script>
+<link rel=stylesheet href=style.css>
+</head>
+<body class="bg-black text-white">
+<section class="w-full h-[70vh] lg:h-[95vh] bg-cover bg-center bg-no-repeat backdrop-brightness-50 mx-auto border-b-8 border-[#232323]" style="background-image:url('./images/bg.jpg')">
+<nav class="md:w-full xl:w-[80%] px-2 mx-auto h-28 flex flex-1 flex-wrap md:flex-nowrap gap-11 md:gap-2 justify-between items-center">
+<div class="w-[50%] h-22">
+<img class="w-44 h-auto" src=./images/logo.png alt>
+</div>
+<div class="w-[30%] h-full items-center flex justify-end gap-8 py-1">
+<div class="w- h-8 flex justify-center items-center gap-2 border px-6 text-white bg-transparent text-center">
+<svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-4 h-4">
+<path stroke-linecap=round stroke-linejoin=round d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+</svg>
+<p> <span class="hidden md:block">English</span></p>
+</div>
+<div class><button class="w-20 h-8 flex justify-center font-medium items-center text-white px-2 py-2 bg-[#E50914] rounded-md">Sign
+In </button> </div>
+</div>
+</nav>
+<div class="flex-col justify-center text-center items-center px-5 mx-auto mt-24 md:mt-40">
+<h1 class="text-3xl xl:text-5xl font-extrabold"> Unlimited movies, TV shows and
+more</h1>
+<p class="text-xl xl:text-2xl font-normal py-6">Watch anywhere. Cancel anytime</p>
+<p class="text-lg xl:text-xl font-normal">Ready to watch? Enter your email to create or restart your
+membership.</p>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap px-3 justify-center mx-auto pb-16 gap-2 py-4">
+<input class="h-14 md:h-16 px-5 md:px-2 max-w-96 lg:p-4 flex flex-1 bg-gray-950/60 rounded-md border focus:outline-2" type=email placeholder="Email Address">
+<button class="h-14 md:h-16 justify-center items-center px-2 max-w-72 lg:p-4 bg-[#E50914] text-white text-xl font-semibold flex gap-2 rounded-md">Get
+Started <svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+</button>
+</div>
+</section>
+<section class="bg-black border-b-8 border-[#232323] py-28">
+<div class="px-5 md:w-[80%] justify-between mx-auto flex flex-wrap md:flex-nowrap items-center bg-black">
+<div class=lg:w-[45%]>
+<h1 class="text-3xl lg:text-5xl text-center md:text-left font-extrabold">Enjoy on your TV</h1>
+<p class="text-center md:text-left mt-8 font-normal md:font-medium md:text-xl">Watch on smart TVs,
+PlayStation, Xbox,Chromecast, Apple TV, Blu-ray players and more.
+</p>
+</div>
+<div>
+<img src=./images/tv.png alt>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-8 border-[#232323] py-24">
+<div class="md:w-[80%] px-5 mx-auto flex flex-wrap-reverse md:flex-nowrap items-center justify-between bg-black">
+<div>
+<img src=./images/mobile.jpg alt>
+</div>
+<div>
+<h1 class="text-3xl lg:text-5xl text-center md:text-left font-extrabold">Download your shows to watch offline</h1>
+<p class="text-center md:text-left mt-8 font-normal md:font-medium md:text-xl">Save your favourites easily and always have something to watch.
+</p>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-8 border-[#232323] py-24">
+<div class="md:w-[80%] px-5 justify-between mx-auto h-[80%] flex flex-wrap md:flex-nowrap gap-0 items-center bg-black">
+<div>
+<h1 class="text-3xl lg:text-5xl text-center md:text-left font-extrabold">Watch everywhere</h1>
+<p class="text-center md:text-left mt-8 font-normal md:font-medium md:text-xl">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+</p>
+</div>
+<div>
+<img src=./images/device.png alt>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-8 border-[#232323] py-24">
+<div class="px-5 md:w-[80%] justify-between mx-auto h-[80%] flex flex-wrap-reverse md:flex-nowrap gap-0 items-center bg-black">
+<div>
+<img src=./images/children.png alt>
+</div>
+<div>
+<h1 class="text-3xl lg:text-5xl text-center md:text-left font-extrabold">Create profiles for kids</h1>
+<p class="text-center md:text-left mt-8 font-normal md:font-medium md:text-xl">Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+</p>
+</div>
+</div>
+</section>
+<section>
+<div class="text-white p-10 text-3xl md:text-5xl font-extrabold text-center">
+<h1>Frequently Asked Questions</h1>
+</div>
+<div class="max-w-[1200px] px-6 flex-col gap-3 items-center mx-auto justify-center text-xl lg:text-2xl lg:font-normal font-light">
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>What is Netflix?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>How much does Netflix cost?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>Where can I watch?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>How do I cancel?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>What can I watch on Netflix?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+<div class="flex justify-between p-5 lg:p-7 h-auto bg-[#2D2D2D] hover:bg-[#414141] duration-300 cursor-pointer my-3">
+<h1>Is Netflix good for kids?</h1>
+<div class=text-4xl><svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+</div>
+</div>
+</div>
+</section>
+<div class="text-white pt-10 pb- text-lg font-medium text-center">
+<h1>Ready to watch? Enter your email to create or restart your membership.</h1>
+</div>
+<div class="flex flex-wrap lg:flex-nowrap px-3 justify-center mx-auto pb-16 border-b-8 border-gray-600 gap-2 py-4">
+<input class="h-14 md:h-16 px-5 md:px-2 max-w-96 lg:p-4 flex flex-1 bg-gray-950/60 rounded-md border focus:outline-2" type=email placeholder="Email Address">
+<button class="h-14 md:h-16 justify-center items-center px-2 max-w-72 lg:p-4 bg-[#E50914] text-white text-xl font-semibold flex gap-2 rounded-md">Get
+Started <svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-6 h-6">
+<path stroke-linecap=round stroke-linejoin=round d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+</button>
+</div>
+<footer class="w-full pl-10 md:pl-24 text-gray-300 px-5 pb-16 mx-auto font-light">
+<div class="pt-16 pb-10">Questions? Call 000-800-919-1694</div>
+<div class="grid grid-cols-2 md:grid-cols-4 py-2">
+<ul class="flex flex-col gap-2 md:gap-5">
+<li class=underline><a href>FAQ</a></li>
+<li class=underline><a href>Investor Relations</a></li>
+<li class=underline><a href>Privacy</a></li>
+<li class=underline><a href>Speed Test</a></li>
+<li class><a href>Netflix India</a></li>
+</ul>
+<ul class="flex flex-col gap-2 md:gap-5">
+<li class=underline><a href>Help Centre</a></li>
+<li class=underline><a href>Jobs</a></li>
+<li class=underline><a href>Cookie Prefernces</a></li>
+<li class=underline><a href>Legal Notices</a></li>
+</ul>
+<ul class="flex flex-col gap-2 md:gap-5">
+<li class=underline><a href>Account</a></li>
+<li class=underline><a href>Ways to Watch</a></li>
+<li class=underline><a href>Corporate Information</a></li>
+<li class=underline><a href>Only on Netflix</a></li>
+</ul>
+<ul class="flex flex-col gap-2 md:gap-5">
+<li class=underline><a href>Media Centre</a></li>
+<li class=underline><a href>Terms Of Use</a></li>
+<li class=underline><a href>Contact Us</a></li>
+</ul>
+</div>
+<div class="w-[10%] h-8 flex justify-center items-center gap-2 border px-6 text-white bg-transparent text-center">
+<svg xmlns=http://www.w3.org/2000/svg fill=none viewBox="0 0 24 24" stroke-width=1.5 stroke=currentColor class="w-4 h-4">
+<path stroke-linecap=round stroke-linejoin=round d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+</svg>
+<p>English</p>
+</div>
+</footer>
+</body>
+</html>
